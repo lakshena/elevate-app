@@ -1,58 +1,20 @@
 <div align="center">
-<img width="521" height="200" alt="image" src="https://github.com/user-attachments/assets/c8dbdd07-87fb-411a-9eed-ace9d4bd222b" />
-
-  
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Elevate App
+# Run and deploy your AI Studio app
 
-A beginner-first resume builder that helps students create clean, recruiter-ready resumes with minimal effort.
+This contains everything you need to run your app locally.
 
----
+View your app in AI Studio: https://ai.studio/apps/drive/1L1-n51gjl-R0YE31H-FNYialNOi5GP6x
 
-## Overview
-Elevate App is a modern web application designed for students who don’t know what to write, how to structure a resume, or how to present their work professionally.  
-It focuses on clarity, guidance, and distraction-free editing.
+## Run Locally
 
----
+**Prerequisites:**  Node.js
 
-## Features
-- Step-by-step resume creation with guided inputs
-- Focus-first editing (no side-by-side live preview)
-- On-demand resume preview
-- GitHub & LinkedIn integration
-- Automatically sorted education timeline (latest first, toggle supported)
-- ATS-friendly resume templates
-- One-click PDF export
-- Shareable read-only resume link
 
----
-
-## UX Highlights
-- Theme-based UI (no black/dark form backgrounds)
-- Education rendered as a clean, auto-sorted timeline
-- Preview mode matches final exported resume exactly
-- Editing and reviewing separated for better focus
-
----
-
-## Tech Stack
-- React / Next.js
-- Tailwind CSS
-- Node.js
-- GitHub REST API
-- Firebase / Supabase
-
----
-
-## AI Tooling
-- Google AI Studio (used for rapid prototyping, UX iteration, and feature refinement)
-
----
-
-## Local Setup
-```bash
-git clone https://github.com/lakshena/ElevateApp.git
-cd ElevateApp
-npm install
-npm run dev
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

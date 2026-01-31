@@ -7,13 +7,67 @@
   <title>Elevate - Student Resume Builder</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- html2pdf.js for high-quality PDF export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body { font-family: 'Inter', sans-serif; -webkit-print-color-adjust: exact; }
+    
     @media print {
-      .no-print { display: none !important; }
-      .print-only { display: block !important; }
-      body { background: white !important; }
-      @page { margin: 0; }
+      /* Hide all non-essential UI */
+      .no-print, header, nav, .fixed, .absolute, button { 
+        display: none !important; 
+      }
+      
+      /* Reset body and container for printing */
+      body { 
+        background: white !important; 
+        margin: 0 !important; 
+        padding: 0 !important; 
+      }
+      
+      #root { 
+        padding: 0 !important; 
+        margin: 0 !important;
+      }
+
+      /* Ensure the print container is visible and occupies full width */
+      .print-view-container {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      /* Flatten the resume document for physical paper */
+      #resume-document {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: 0 !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+      }
+
+      @page {
+        margin: 1.5cm;
+        size: auto;
+      }
+    }
+
+    /* Custom scrollbar for better UX in forms */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #e2e8f0;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #cbd5e1;
     }
   </style>
 <script type="importmap">
