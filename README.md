@@ -1,8 +1,10 @@
 <div align="center">
-<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/b00a066b-c985-4e00-bff0-db2461ceffa7" />
+<img width="521" height="200" alt="image" src="https://github.com/user-attachments/assets/c8dbdd07-87fb-411a-9eed-ace9d4bd222b" />
+
+  
 </div>
 
-# Elevate App 🚀
+# Elevate App
 
 A beginner-first resume builder that helps students create clean, recruiter-ready resumes with minimal effort.
 
